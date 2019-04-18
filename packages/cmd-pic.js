@@ -21,7 +21,7 @@ class PicConsole {
 
   static get DEFAULTS() {
     return {
-      pic: 'assets / images / test.jpg',
+      pic: 'assets/images/test.png',
       chars: ['I', 'L', 'O', 'V', 'E', 'U'],
       step: 20,
       interval: 10
@@ -46,7 +46,7 @@ class PicConsole {
       rgbArray.forEach((row, index) => {
         if (index % step === 0) {
           setTimeout(() => {
-            log(...row.map(v => chalk.rgb(v[0], v[l], v[2])(this._getChar())))
+            log(...row.map(v => chalk.rgb(v[0], v[1], v[2])(this._getChar())))
           }, interval * index)
         }
       })
@@ -66,7 +66,7 @@ class PicConsole {
     let pixelsData = pixels.data
 
     let pixelArray = Array.from({
-        length: pixels.shape[l]
+        length: pixels.shape[1]
       },
       (v, i) => []
     )
@@ -79,7 +79,7 @@ class PicConsole {
         g = pixelsData[i + 1],
         b = pixelsData[i + 2]
 
-      let row = parselnt(i / 4 / picWidth)
+      let row = parseInt(i / 4 / picWidth)
 
       if (this._filter(pixelsData, i)) {
         pixelArray[row].push([r, g, b])
