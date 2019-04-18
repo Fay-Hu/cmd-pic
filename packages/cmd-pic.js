@@ -14,7 +14,7 @@ class PicConsole {
   constructor(
     options = {}
   ) {
-    this.options = Object.assign(PicConsole.DEFAULTS, options)
+    this.options = Object.assign({}, PicConsole.DEFAULTS, options)
 
     this.init()
   }
