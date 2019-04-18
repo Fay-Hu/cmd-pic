@@ -1,7 +1,7 @@
 {
   "name": "cmd-pic",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./packages/com-pic",
   "author": "Fay",
   "license": "MIT",
   "bin": {
@@ -13,5 +13,19 @@
   "dependencies": {
     "chalk": "^2.4.1",
     "get-pixels": "^3.3.2"
-  }
+  },
+  "description": "- `npm install` 安装依赖\r - `npm start` 输出图形",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fay-Hu/cmd-pic.git"
+  },
+  "keywords": [
+    "cmd",
+    "pic"
+  ],
+  "bugs": {
+    "url": "https://github.com/Fay-Hu/cmd-pic/issues"
+  },
+  "homepage": "https://github.com/Fay-Hu/cmd-pic#readme"
 }
