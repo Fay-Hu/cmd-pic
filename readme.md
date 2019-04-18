@@ -19,3 +19,6 @@ new PicConsole({
   pic: 'assets/images/zuguo.png'
 })
 ```
+
+### 样例
+![](./assets/doc/result.png)
