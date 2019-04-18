@@ -6,6 +6,4 @@
 - `npm start` 输出图形
 
 ### 修改参数
-```javascript
-  
-```
+![code](code.png)
