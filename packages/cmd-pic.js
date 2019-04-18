@@ -6,10 +6,10 @@ const log = console.log
 class PicConsole {
   /**
    *
-   * @param {string} pic
-   * @param {array} chars
-   * @param {number} step
-   * @param {number} interval {TfsiftBSiEBj'
+   * @param {string} pic 引用图片地址
+   * @param {array} chars 使用的字符 默认为['I', 'L', 'O', 'V', 'E', 'U']
+   * @param {number} step 跳过的像素
+   * @param {number} interval 输出延时
    */
   constructor(
     options = {}
